@@ -1,6 +1,7 @@
-// Check Permutation: Given two strings, write a method to decide if one is a permutation of the other. 
-// Time Complexity O(nlogn)
-// Sort the arrays and check if they are equal
+/** Check Permutation: Given two strings, write a method to decide if one is a permutation of the other. 
+* Time Complexity O(nlogn)
+* Sort the arrays and check if they are equal
+*/
 import java.util.Arrays;
 
 public class ArePermutation {
