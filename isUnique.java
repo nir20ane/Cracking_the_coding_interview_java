@@ -1,7 +1,8 @@
-// Problem:Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
-// Time complexity: O(n)
-// Space Complexity: O(1) or 128, as we create an array of 128 boolean values
-//Question to ask is array and ASCII array
+/** Problem:Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+* Time complexity: O(n)
+* Space Complexity: O(1) or 128, as we create an array of 128 boolean values
+* Question to ask is array and ASCII array
+*/
 public class IsUnique{
     public static boolean isUnique(String s)
     {
