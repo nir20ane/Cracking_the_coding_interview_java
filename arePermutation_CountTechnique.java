@@ -1,6 +1,7 @@
-// Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
-// Count the characters in each string and check if they are equal.
-// Time Complexity O(1)
+/** Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
+* Count the characters in each string and check if they are equal.
+* Time Complexity O(1)
+*/
 public class ArePermutation_CountTechnique {
 	public static boolean permutation(String s, String t) {
         if (s.length() != t.length()) {
