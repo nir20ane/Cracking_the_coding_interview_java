@@ -1,7 +1,8 @@
-// URLify: Write a method to replace all spaces in a string with '%20'. You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the "true" length of the string. (Note: if implementing in Java, please use a character array so that you can perform this operation in place.) 
-// EXAMPLE Input: "Mr John Smith ", 13 Output: "Mr%20John%20Smith"  
-// Two Scan Approach, Scan once forward to count space and once backward for filling
-// We can edit the staring in place if we use character arrays
+/* URLify: Write a method to replace all spaces in a string with '%20'. You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the "true" length of the string. (Note: if implementing in Java, please use a character array so that you can perform this operation in place.) 
+* EXAMPLE Input: "Mr John Smith ", 13 Output: "Mr%20John%20Smith"  
+* Two Scan Approach, Scan once forward to count space and once backward for filling
+* We can edit the staring in place if we use character arrays
+*/
 public class ReplaceSpaces {
 	public String replace(String s1, int length) {
 		char[] chars = s1.toCharArray();
