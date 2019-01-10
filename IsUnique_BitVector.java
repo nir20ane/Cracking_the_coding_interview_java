@@ -1,6 +1,7 @@
-//Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
-// Let us assume that the string has all lower case letters and solve it using bit vector
-// Advantages: space is reduced
+/**Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+* Let us assume that the string has all lower case letters and solve it using bit vector
+* Advantages: space is reduced
+*/
 public class IsUnique_BitVector {
 	public static boolean isUnique(String s)
 	{
