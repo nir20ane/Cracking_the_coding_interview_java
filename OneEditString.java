@@ -18,6 +18,7 @@ public class OneEditString
 		int len2 = s2.length();
 		int index1 = 0, index2 = 0;
 		int count = 0;
+		if (Math.abs(len1 - len2) > 1) return false; // if length difference is more than 1 return false
 		while(index1<len1 && index2<len2)
 		{
 			if(s1.charAt(index1) != s2.charAt(index2))
