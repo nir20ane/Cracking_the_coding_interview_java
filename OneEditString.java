@@ -49,5 +49,6 @@ public class OneEditString
 		System.out.println(one.oneEditString("pale","balee"));
 		System.out.println(one.oneEditString("ale","bale"));
 		System.out.println(one.oneEditString("bale","bal"));
+		System.out.println(one.oneEditString("bale","baleee"));
 	}
 }
