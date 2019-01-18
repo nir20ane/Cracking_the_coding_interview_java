@@ -16,7 +16,7 @@ public class ReplaceSpaces {
 		for(i=length-1;i>=0;i--) // traverse from end of string
 		{
 			char c = chars[i];
-			if(c == ' ')                
+			if(c == ' ')  // if there is space, insert % 20 in new char array          
 			{
 			    chars_new[index-1] = '0'; 
 			    chars_new[index-2] = '2';
@@ -25,7 +25,7 @@ public class ReplaceSpaces {
 			}
 			else
 			{
-			    chars_new[index-1] = c;
+			    chars_new[index-1] = c;  // else just insert char
 			    index--;
 			}
 		}
