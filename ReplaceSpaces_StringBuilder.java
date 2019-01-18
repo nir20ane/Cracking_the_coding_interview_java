@@ -9,17 +9,17 @@ public class ReplaceSpaces_StringBuilder {
         StringBuilder newstring = new StringBuilder(words[0]);
         for(int i=1;i<words.length;i++)
         {
-        	newstring.append("%20");
-        	newstring.append(words[i]);
+            newstring.append("%20");
+            newstring.append(words[i]);
         }
-		return newstring.toString();
+	return newstring.toString();
 	}
 
 	public static void main(String args[]) {
-		String s1 = "I am John Smith  ";
-        s1=s1.trim();
-        ReplaceSpaces_StringBuilder r = new ReplaceSpaces_StringBuilder();
-		System.out.println(r.replace(s1));
+	    String s1 = "I am John Smith  ";
+            s1=s1.trim();
+            ReplaceSpaces_StringBuilder r = new ReplaceSpaces_StringBuilder();
+	    System.out.println(r.replace(s1));
 	}
 
 }
