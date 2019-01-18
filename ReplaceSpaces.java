@@ -9,9 +9,9 @@ public class ReplaceSpaces {
 		int index = 0, spacecount = 0,i;
 		for(i=0;i<length;i++)
 		{
-			if(chars[i] == ' ') spacecount++;
+			if(chars[i] == ' ') spacecount++; // count spaces
 		}
-		index = length+spacecount*2;
+		index = length+spacecount*2; // have extended length value
 		char[] chars_new = new char[index];
 		for(i=length-1;i>=0;i--)
 		{
@@ -19,8 +19,8 @@ public class ReplaceSpaces {
 			if(c == ' ')
 			{
 				chars_new[index-1] = '0';
-				chars_new[index-1] = '2';
-				chars_new[index-1] = '%';
+				chars_new[index-2] = '2';
+				chars_new[index-3] = '%';
 				index = index - 3;
 			}
 			else
