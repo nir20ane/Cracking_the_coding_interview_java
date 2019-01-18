@@ -12,21 +12,21 @@ public class ReplaceSpaces {
 			if(chars[i] == ' ') spacecount++; // count spaces
 		}
 		index = length+spacecount*2; // have extended length value
-		char[] chars_new = new char[index];
-		for(i=length-1;i>=0;i--)
+		char[] chars_new = new char[index]; // have a new char array
+		for(i=length-1;i>=0;i--) // traverse from end of string
 		{
 			char c = chars[i];
-			if(c == ' ')
+			if(c == ' ')                
 			{
-				chars_new[index-1] = '0';
-				chars_new[index-2] = '2';
-				chars_new[index-3] = '%';
-				index = index - 3;
+			    chars_new[index-1] = '0'; 
+			    chars_new[index-2] = '2';
+			    chars_new[index-3] = '%';
+			    index = index - 3;
 			}
 			else
 			{
-				chars_new[index-1] = c;
-				index--;
+			    chars_new[index-1] = c;
+			    index--;
 			}
 		}
 		return new String(chars_new);
@@ -40,5 +40,4 @@ public class ReplaceSpaces {
 		ReplaceSpaces r = new ReplaceSpaces();
 		System.out.println(r.replace(s1, trueLength));
 	}
-
 }
