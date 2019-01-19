@@ -17,7 +17,7 @@ public class ZeroMatrix_WithArray{
 			{
 				if(matrix[i][j] == 0)
 				{
-					row[i] = true;
+				    row[i] = true;
 				    col[j] = true; // keep track of rows and columns that has 0
 				}
 			}
