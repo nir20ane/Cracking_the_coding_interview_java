@@ -6,7 +6,6 @@ call to isSubstring (e.g., "waterbottle" is a rotation of"erbottlewat")
 ** Approach: Use two loops, inner loop should not increment when characters mismatch
 * Time Complexity - O(n^2)
 * Space Complexity - O(1)
-
 */
 public class StringRotation{
 	public boolean stringRotation(String str1, String str2)
