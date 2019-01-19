@@ -20,8 +20,7 @@ public class StringRotation{
 		    {
 			    for(int i=0; i<n; i++) // second loop increments only when characters match
 			    {
-				    if(str1.charAt((s + i)%n) != str2.charAt(i)) //logic to keep iterator going
-				    continue search;
+				    if(str1.charAt((s + i)%n) != str2.charAt(i)) continue search; //logic to keep iterator going				    
 			    }
 			return true;
 		    }
