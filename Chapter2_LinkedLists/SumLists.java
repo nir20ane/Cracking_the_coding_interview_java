@@ -59,19 +59,19 @@ public class SumLists {
 		SumLists a = new SumLists();
 		SumLists l1 = new SumLists();
 		l1.head = new Node(7);
-        Node n2 = new Node(1);
-        Node n3 = new Node(6);
-        l1.head.next = n2;
-        n2.next = n3;
-        n3.next = null;
+        	Node n2 = new Node(1);
+        	Node n3 = new Node(6);
+        	l1.head.next = n2;
+        	n2.next = n3;
+        	n3.next = null;
 
-        SumLists l2 = new SumLists();
-        l2.head = new Node(5);
-        Node n22 = new Node(9);
-        Node n23 = new Node(2);
-        l2.head.next = n22;
-        n22.next = n23;
-        n23.next = null;
-        a.sumlists(l1.head, l2.head);
+        	SumLists l2 = new SumLists();
+        	l2.head = new Node(5);
+        	Node n22 = new Node(9);
+        	Node n23 = new Node(2);
+        	l2.head.next = n22;
+        	n22.next = n23;
+        	n23.next = null;
+        	a.sumlists(l1.head, l2.head);
 	}
 }
