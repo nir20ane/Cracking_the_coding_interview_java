@@ -10,7 +10,6 @@ Result: nothing is returned, but the new linked list looks like a ->b->d->e->f
 */
 package CTCILinked;
 
-
 public class DeleteMiddleNode {
 	private static Node head;
 	
