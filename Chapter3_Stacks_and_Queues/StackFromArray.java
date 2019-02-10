@@ -1,3 +1,11 @@
+/*Three in One: Describe how you could use a single array to implement three stacks. 
+ * I have implemented three stacks of capacity 10 using four five methods
+ * createlist() - created new stacknodes array
+ * push(int stacknum, int value) - pushes value, checks for overflow, increments size, update top
+ * pop(int stacknum, int index) - pops and returns Node, checks for underflow
+ * greefreeindex() - gets current free index, updates index
+ * freenode(int index) - deletes Node at a particular index decrements size
+ */
 package CCIstackqueue;
 
 public class StackFromArray {
