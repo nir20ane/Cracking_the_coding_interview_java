@@ -18,11 +18,12 @@ public class StackFromArray {
 	StackFromArray()
 	{
 		stacknodes = new StackNode[capacity];
+		createlist();
 	}
 	
 	public void createlist()
 	{
-		for(int i=0;i<=capacity; i++)
+		for(int i=0;i<capacity; i++)
 		{
 			stacknodes[i] = new StackNode(0, i+1);
 		}
@@ -40,7 +41,7 @@ public class StackFromArray {
 		stackpointers[stacknum - 1] = indextopush;
 	}
 	
-	public StackNode pop(int stacknum, int index) throws Exception
+	public StackNode pop(int index, int stacknum) throws Exception
 	{
 		int currstacktop;
 		currstacktop = stackpointers[stacknum - 1];
@@ -67,22 +68,22 @@ public class StackFromArray {
 	{
 		stacknodes[index].next = freelisttopindex;
 		freelisttopindex = index;
-		size --;
+		size--;
 	}
 	 public static void main(String args[]) {
          // Test Driver
-		 StackMFromArray1 mulStack = new StackMFromArray1();
+		 StackFromArray mulStack = new StackFromArray();
 		 try {
 			 mulStack.push(1, 11);
 			 mulStack.push(1, 12);
-			 mulStack.push(2, 21);
+			 mulStack.push(2, 13);
 			 mulStack.push(3, 31);
 			 mulStack.push(3, 32);
 			 mulStack.push(2, 22);
 			 mulStack.push(1, 13);
-			 StackNode1 node = mulStack.pop(1);
+			 StackNode node = mulStack.pop(2, 1);
 			 System.out.println(node.value);
-			 node = mulStack.pop(1);
+			 node = mulStack.pop(1, 2);
 			 System.out.println(node.value);
 			 mulStack.push(1, 13);
 		 } catch (Exception e) {
